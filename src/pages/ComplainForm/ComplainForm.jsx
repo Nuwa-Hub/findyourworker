@@ -16,6 +16,7 @@ import {
 import { getDownloadURL, getStorage, ref, uploadBytes } from "firebase/storage";
 import { storage } from "../../common/firebase";
 import { publicRequest } from "../../requestMethods";
+import emailjs from "@emailjs/browser";
 
 const ComplainForm = () => {
   const dispatch = useDispatch();
@@ -82,6 +83,27 @@ const ComplainForm = () => {
       theme: "light",
     });
   }
+
+  const sendEmail = (newrequest) => {
+   
+
+    emailjs
+      .send(
+        "service_tsuwa8c",
+        "template_4pzjxe4",
+        newrequest,
+        "0BGsoBC7vVFTsSPOt"
+      )
+      .then(
+        (result) => {
+          console.log("d");
+        },
+        (error) => {
+          console.log("s");
+        }
+      );
+  };
+
   //This function uploads the reciet fire store
   //make new request
   const addRequest = async (request, distpatch) => {
@@ -112,7 +134,8 @@ const ComplainForm = () => {
               ...values,
               photo: url,
             };
-            console.log(newComplaint);
+            //console.log(newComplaint);
+            sendEmail(newComplaint);
             addRequest(newComplaint, dispatch);
           })
           .catch((err) => {

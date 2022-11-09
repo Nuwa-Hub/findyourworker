@@ -118,8 +118,6 @@ const ClientForm = () => {
   // }, [isFetchingReq]);
 
   const sendEmail = (newrequest) => {
-    console.log(form.current);
-
     emailjs
       .send(
         "service_tsuwa8c",
