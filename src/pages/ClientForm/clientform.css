@@ -1,0 +1,92 @@
+.form-dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url("https://cdn.shopify.com/s/files/1/0022/1246/2655/articles/teamwork-makes-the-dream-work_4096x2732.jpg?v=1613850321");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  form{
+      background-color: white;
+      padding: 0px 60px;
+      border-radius: 10px;
+      
+  }
+  
+  h1{
+      color: rgb(77, 1, 77);
+      text-align: center;
+  }
+  .form-data{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-file{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .file-input-reciept{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .file-input-select{
+    display: flex;
+    flex-direction: column;
+   margin-top: 5px;
+  }
+  .file-input-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .dif-input{
+    margin-top: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    .form-file{
+       
+        margin-left: 0px;
+      }
+  }
+  button{
+      width: 100%;
+      height: 50px;
+      padding: 10px;
+      border: none;
+      background-color: rebeccapurple;
+      color: white;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-bottom: 30px;
+  }
+  textarea{
+    padding: 15px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  .linking-page
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  
+h5{
+  font-size: 10px;
+  padding: 1px;
+  color: red;
+ 
+}

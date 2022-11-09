@@ -1,0 +1,28 @@
+.devmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center ;
+}
+.developers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 200px;
+}
+.developerItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.developerlinks{
+    margin-top: 10px;
+}
+.developerImg{
+   width: 150px;
+   height: 150px;
+   border-radius: 100%;
+   object-fit: cover;
+}
