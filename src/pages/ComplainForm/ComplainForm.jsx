@@ -139,12 +139,12 @@ const ComplainForm = () => {
             addRequest(newComplaint, dispatch);
           })
           .catch((err) => {
-            console.log(err);
+            //console.log(err);
             notify("something went wrong!");
           });
       })
       .catch((err) => {
-        console.log(err.message);
+        //console.log(err.message);
         notify("something went wrong!");
       });
   }
