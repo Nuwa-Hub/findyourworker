@@ -1,6 +1,6 @@
 .top {
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: rgb(255, 255, 255);
   position: sticky;
   top: 0;
@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 5px;
 }
 
 .topCenter {
@@ -50,8 +51,13 @@
 .topListItem {
   margin-right: 20px;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 800;
   cursor: pointer;
+
+  font-family: "Lora", serif;
+}
+.topListItem:hover {
+  color: rgb(0, 0, 0);
 }
 
 .topSearchIcon {
@@ -68,7 +74,16 @@
     font-weight: 300;
     cursor: pointer;
   }
-  .topLeft{
+  .topLeft {
     display: none;
+  }
+  .topSearchIcon {
+    font-size: 12px;
+  }
+  .topListItem {
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    cursor: pointer;
   }
 }

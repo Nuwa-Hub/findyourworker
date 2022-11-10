@@ -21,7 +21,7 @@
   max-height: 700px;
   width: 100%;
   overflow-y: scroll;
-  
+  scroll-behavior: smooth;
 }
 .sidebarItem {
   display: flex;
@@ -29,7 +29,7 @@
   align-items: left;
   border-top: 1px solid #a7a4a4;
   border-bottom: 1px solid #a7a4a4;
-  width: 100%;
+  width: 90%;
   
 }
 @media screen and (max-width: 480px) {
@@ -50,7 +50,7 @@
 }
 .sidebarTitle {
   font-family: "Varela Round", sans-serif;
-  font-size: 11px !important;
+  font-size: 13px !important;
   color: #222;
   font-weight: 600;
   
@@ -70,7 +70,7 @@
 
 .sidebarItem > p {
   padding: 5px;
-  font-size: 11px !important;
+  font-size: 12px !important;
 }
 
 .sidebarList {

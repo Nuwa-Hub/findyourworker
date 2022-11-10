@@ -7,7 +7,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import { addRate, getRatings } from "../../redux/apiCalls";
 import { useDispatch, useSelector } from "react-redux";
 
-const RatingForm = () => {
+const RatingForm = ({distpatch}) => {
   const [rate, setRate] = useState(0);
   const [err, seterr] = useState(0);
   const [values, setValues] = useState({
@@ -16,7 +16,7 @@ const RatingForm = () => {
   });
 
   
-  const distpatch=useDispatch()
+  //const distpatch=useDispatch()
   const handleSubmit = (e) => {
     e.preventDefault();
     if (rate) {

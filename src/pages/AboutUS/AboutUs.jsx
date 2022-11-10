@@ -2,16 +2,17 @@ import React from "react";
 import Developers from "../../components/Developers/Developers";
 import TopBar from "../../components/topbar/TopBar";
 import "./aboutus.scss"
+import "./aboutus.css"
 const AboutUs = () => {
   return (
     <>
      <TopBar/>
 
       <div id="about-main">
-        <div class="jumbotron">
-          <div class="jumbotron-inner">
-            <div class="top-box">
-              <div class="content-box">
+        <div className="jumbotron">
+          <div className="jumbotron-inner">
+            <div className="top-box">
+              <div className="content-box">
                 <h1>About APIMATIC</h1>
                 <p>
                   APIMatic is a developer experience platform for web APIs.{" "}
@@ -21,24 +22,24 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-          <div class="img-layer-container">
-            <div class="team-image" id="team-image">
+          <div className="img-layer-container">
+            <div className="team-image" id="team-image">
               <img src="https://apimatic.io/img/theme/aboutUs/images-1.png" />
             </div>
 
-            <div class="circles-container">
-              <div class="img-1">
+            <div className="circles-container">
+              <div className="img-1">
                 <img src="https://apimatic.io/img/theme/aboutUs/Circles-1-1.svg" />
               </div>
-              <div class="img-2">
+              <div className="img-2">
                 <img src="https://apimatic.io/img/theme/aboutUs/Circles-2-1.svg" />
               </div>
             </div>
           </div>
         </div>
-        <div class="story-container">
-          <div class="need-for-dx-container">
-            <h3 class="text-center">Need for DX</h3>
+        <div className="story-container">
+          <div className="need-for-dx-container">
+            <h3 className="text-center">Need for DX</h3>
             <p>
               Application Programming Interfaces (APIs) have taken the world by
               storm and are now the de facto standard of software communication.
@@ -52,13 +53,13 @@ const AboutUs = () => {
               documentation, however, are arduous, monotonous and error-prone
               tasks. It is a slow process and costs a lot of time and money.
             </p>
-            <div class="img-container">
+            <div className="img-container">
            
             </div>
           </div>
-          <div class="container-divider"></div>
-          <div class="our-tech-container">
-            <h3 class="text-center">Our Technology</h3>
+          <div className="container-divider"></div>
+          <div className="our-tech-container">
+            <h3 className="text-center">Our Technology</h3>
             <p>
               Our code generation engine enables API providers to generate SDKs
               for their APIs within minutes and at a fraction of the cost. We
@@ -73,13 +74,13 @@ const AboutUs = () => {
               cake, we provide beautifully designed DX portals to encapsulate
               this documentation.
             </p>
-            <div class="img-container">
+            <div className="img-container">
              
             </div>
           </div>
-          <div class="container-divider"></div>
-          <div class="origin-story-container">
-            <h3 class="text-center">Origin Story</h3>
+          <div className="container-divider"></div>
+          <div className="origin-story-container">
+            <h3 className="text-center">Origin Story</h3>
             <p>
               While doing research work for their PhDs from the University of
               Auckland in 2014, our founders came across one of the API
@@ -105,9 +106,9 @@ const AboutUs = () => {
               into a product i.e. APIMatic.
             </p>
           </div>
-          <div class="container-divider"></div>
-          <div class="today-container">
-            <h3 class="text-center">Flash Forward Today</h3>
+          <div className="container-divider"></div>
+          <div className="today-container">
+            <h3 className="text-center">Flash Forward Today</h3>
             <p>
               APIMatic has come a long way since its inception 3 years ago.
               Having started with only generating SDKs, APIMatic now provides
@@ -127,7 +128,7 @@ const AboutUs = () => {
               <li>Generate complete Developer Experience API Portals</li>
             </ul>
           </div>
-          <div class="container-divider"></div>
+          <div className="container-divider"></div>
         </div>
       </div>
      <Developers/>

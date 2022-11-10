@@ -3,17 +3,13 @@ import { Link } from "react-router-dom";
 import "./topbar.css";
 import dp from "../../assets/download.jpeg";
 
-
 export default function TopBar() {
   const PF = "http://localhost:5000/images/";
 
   return (
     <div className="top">
       <div className="topLeft">
-      
         <i className="topIcon fab fa-facebook-square"></i>
-        <i className="topIcon fab fa-twitter-square"></i>
-        <i className="topIcon fab fa-pinterest-square"></i>
         <i className="topIcon fab fa-instagram-square"></i>
       </div>
       <div className="topCenter">
@@ -23,7 +19,7 @@ export default function TopBar() {
               HOME
             </Link>
           </li>
-       
+
           <li className="topListItem">
             <Link className="link" to="/clientform">
               ADD REQUEST
@@ -39,7 +35,7 @@ export default function TopBar() {
               ABOUT
             </Link>
           </li>
-          <li className="topListItem"></li>
+         
         </ul>
       </div>
     </div>

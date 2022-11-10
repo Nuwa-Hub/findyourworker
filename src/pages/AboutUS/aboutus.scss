@@ -21,7 +21,7 @@ $about-section-heading-blue: #074e8c;
 // BASE STYLES (not specific to this page)
 .product-navbar {
     height: 40px;
-    width: 100%;
+    width: 95%;
     background: #090b0f;
     border-bottom: 1px solid #090b0f;
     font-family: 'Open Sans',sans-serif;
@@ -203,7 +203,7 @@ $about-section-heading-blue: #074e8c;
 
         @media (max-width: 1000px) {
             .img-layer-container {
-                width: 100%;
+                width: 95%;
             }
         }
 
@@ -255,7 +255,7 @@ $about-section-heading-blue: #074e8c;
 
     .story-container {
         height: 100%;
-        width: 100%;
+        width: 90%;
         margin-top: 150px;
       
         @media (max-width: 640px) {
@@ -276,7 +276,7 @@ $about-section-heading-blue: #074e8c;
             padding: 0 20px;
           
             @media (max-width: 815px) {
-                width: 100%;
+                width: 90%;
             }
 
             .img-container {

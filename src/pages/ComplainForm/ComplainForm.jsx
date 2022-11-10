@@ -179,16 +179,7 @@ const ComplainForm = () => {
               ))}
             </div>
             <div className="form-file">
-              <div className="file-input-reciept">
-                <label>Upload the photo</label>
-                <input
-                  name="photo"
-                  type="file"
-                  onChange={(e) => {
-                    setComplaintFile(e.target.files[0]);
-                  }}
-                />
-              </div>
+          
 
               <div className="file-input-text">
                 <label>Your Complaint</label>
@@ -198,6 +189,16 @@ const ComplainForm = () => {
                   onChange={onChange}
                   required
                 ></textarea>
+              </div>
+              <div className="file-input-reciept">
+                <label>Upload the photo</label>
+                <input
+                  name="photo"
+                  type="file"
+                  onChange={(e) => {
+                    setComplaintFile(e.target.files[0]);
+                  }}
+                />
               </div>
             </div>
           </div>

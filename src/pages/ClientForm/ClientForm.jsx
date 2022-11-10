@@ -127,10 +127,10 @@ const ClientForm = () => {
       )
       .then(
         (result) => {
-          console.log("d");
+          //console.log("d");
         },
         (error) => {
-          console.log("s");
+          //console.log("s");
         }
       );
   };
@@ -139,11 +139,16 @@ const ClientForm = () => {
   const addRequest = async (request, distpatch) => {
     try {
       const res = await publicRequest.post(`/request/`, request);
+      const tempId = res.data.requestId
+      res.data.requestId=`${tempId}`
+      //console.log(res.data)
+
+      sendEmail(res.data);
       distpatch(addRequestSuccess(res.data));
       notify("successfully added request!");
       setTimeout(function () {
         window.location.reload();
-      }, 6000);
+      }, 4000);
     } catch (err) {
       //console.log(err);
       distpatch(addRequestFailure(err));
@@ -165,7 +170,7 @@ const ClientForm = () => {
               recieptfile: url,
             };
             //console.log(newReq);
-            sendEmail(newReq);
+            //sendEmail(newReq);
             addRequest(newReq, dispatch);
           })
           .catch((err) => {
@@ -230,7 +235,7 @@ const ClientForm = () => {
       <TopBar />
       <ToastContainer
         position="top-right"
-        autoClose={5000}
+        autoClose={3000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick
@@ -257,16 +262,7 @@ const ClientForm = () => {
               ))}
             </div>
             <div className="form-file">
-              <div className="file-input-reciept">
-                <label>Upload the payment reciept</label>
-                <input
-                  name="recieptfile"
-                  type="file"
-                  onChange={(e) => {
-                    setRecietfile(e.target.files[0]);
-                  }}
-                />
-              </div>
+         
               <div className="file-input-select">
                 <label>Job types</label>
                 <Select
@@ -304,6 +300,16 @@ const ClientForm = () => {
                   onChange={onChange}
                   required
                 ></textarea>
+              </div>
+              <div className="file-input-reciept">
+                <label>Upload the photo</label>
+                <input
+                  name="recieptfile"
+                  type="file"
+                  onChange={(e) => {
+                    setRecietfile(e.target.files[0]);
+                  }}
+                />
               </div>
             </div>
           </div>

@@ -43,7 +43,7 @@
 }
 .headerTitleLg {
   position: absolute;
-  left:18%;
+  text-align: center;
   top: 12%;
   font-size: 40px;
 }

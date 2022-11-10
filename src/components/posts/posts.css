@@ -1,5 +1,9 @@
-.posts{
+
+.postmain{
     flex: 9;
+}
+.posts{
+    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -7,9 +11,11 @@
     margin: 10px;
     margin-top: 20px;
     max-height: 1000px;
+    
     overflow-y: scroll;
     min-width: 400px;
-   
+    scroll-behavior:smooth
+
 }
 ::-webkit-scrollbar {
     width: 0;  /* Remove scrollbar space */

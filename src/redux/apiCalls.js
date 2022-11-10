@@ -81,6 +81,7 @@ export const logOut = async (dispatch) => {
 export const getRatings = async (distpatch) => {
   try {
     const res = await publicRequest.get(`/rating/`);
+    res.data=res.data.reverse();
     distpatch(getRatinguccess(res.data))
     
   } catch (err) {
@@ -92,7 +93,7 @@ export const getRatings = async (distpatch) => {
 export const addRate = async (rate,distpatch) => {
   try {
     const res = await publicRequest.post(`/rating/`, rate);
-    distpatch( addRatingSuccess(res.data))
+    distpatch(addRatingSuccess(res.data))
   } catch (err) {
     console.log(err);
 

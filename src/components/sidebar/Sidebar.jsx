@@ -6,21 +6,20 @@ import Rating from "@mui/material/Rating";
 import RatingForm from "../RatingForm/RatingForm";
 import { getRatings } from "../../redux/apiCalls";
 import { useDispatch, useSelector } from "react-redux";
+import Moment from "react-moment";
 
 export default function Sidebar() {
   const dispatch = useDispatch();
   const ratings = useSelector((state) => state.rating.ratings);
- 
 
   useEffect(() => {
     getRatings(dispatch);
-    
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="sidebarmain">
       <h3>Rate Us!</h3>
-      <RatingForm />
+      <RatingForm distpatch={dispatch}/>
       <div className="sidebar">
         {ratings.map((rating, index) => (
           <div className="sidebarItem" key={index}>
@@ -39,14 +38,18 @@ export default function Sidebar() {
             </div>
 
             <p className="rateptag">{rating.comment}</p>
+            <p>
+            {rating.createdDate ?
+              <Moment fromNow>{ rating.createdDate }</Moment>
+            : <></>}
+            </p>
           </div>
         ))}
         <div className="sidebarItem">
           <span className="sidebarTitle2">FOLLOW US</span>
           <div className="sidebarSocial">
             <i className="sidebarIcon fab fa-facebook-square"></i>
-            <i className="sidebarIcon fab fa-twitter-square"></i>
-            <i className="sidebarIcon fab fa-pinterest-square"></i>
+         
             <i className="sidebarIcon fab fa-instagram-square"></i>
           </div>
         </div>
