@@ -25,7 +25,6 @@
 
 @media screen and (max-width: 480px) {
     .posts{
-        
         margin: 20px;
         max-height: 500px;
         overflow-y: scroll;

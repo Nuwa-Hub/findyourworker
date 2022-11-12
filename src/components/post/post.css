@@ -2,9 +2,22 @@
   width: 325px;
   margin: 0px 25px 40px 25px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1050px) {
+  .post {
+    width: 280px;
+    margin: 4px 4px 4px 4px;
+  }
+}
+@media screen and (max-width: 835px) {
   .post {
     width: 90%;
+    margin: 4px 4px 4px 4px;
+  }
+
+}
+@media screen and (max-width: 480px) {
+  .post {
+    width: 85%;
     margin: 4px 4px 4px 4px;
   }
 }

@@ -32,6 +32,24 @@
   width: 90%;
   
 }
+@media screen and (max-width: 1050px) {
+  .sidebarmain {
+    flex: 5;
+  }
+
+}
+@media screen and (max-width: 932px) {
+  .sidebarmain {
+    flex: 3;
+  }
+
+}
+@media screen and (max-width: 835px) {
+  .sidebarmain {
+    flex: 6;
+  }
+
+}
 @media screen and (max-width: 480px) {
   .sidebar {
     max-height: 500px;

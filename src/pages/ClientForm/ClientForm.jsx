@@ -164,14 +164,24 @@ const ClientForm = () => {
         getDownloadURL(imgRef)
           .then((url) => {
             // console.log(`uploded img successfully ${url}`);
+            if (recietfile==""){
+            const newReq = {
+              ...values,
+              serviceType: selectType,
+              recieptfile: "",
+            };
+            addRequest(newReq, dispatch);
+          }else{
             const newReq = {
               ...values,
               serviceType: selectType,
               recieptfile: url,
             };
+            addRequest(newReq, dispatch);
+          }
             //console.log(newReq);
             //sendEmail(newReq);
-            addRequest(newReq, dispatch);
+           
           })
           .catch((err) => {
             //console.log(err);
