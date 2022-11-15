@@ -68,6 +68,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .top{
+  margin-left:5px ;
+  }
   .topListItem {
     margin-right: 15px;
     font-size: 12px;

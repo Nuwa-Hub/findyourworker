@@ -1,8 +1,11 @@
 .header {
   margin-top: 60px;
+  
 }
 .heddev {
+  
   display: flex;
+
 }
 .headerTitles {
   flex: 1;
@@ -34,7 +37,6 @@
   width: 100%;
   height: 600px;
   margin-top: 60px;
-
   /* object-fit: cover; */
 }
 @media screen and (max-width: 1230px) {
@@ -54,13 +56,23 @@
   }
   .headerImg {
     width: 100%;
-    height: 550px;
-    margin-top: 10px;
-    object-fit: cover;
-    object-position: 60% 100%;
+    height: 500px;
+    margin-top: 20px;
+   
+    object-position: 100% 100%;
   }
 }
-@media screen and (max-width: 655px) {
+@media screen and (max-width: 980px) {
+
+  .headerImg {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    object-fit: cover;
+    object-position: 100% 100%;
+  }
+}
+@media screen and (max-width: 800px) {
   .headerTitleLg {
     position: absolute;
     text-align: center;

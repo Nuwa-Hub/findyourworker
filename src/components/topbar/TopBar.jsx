@@ -22,17 +22,17 @@ export default function TopBar() {
 
           <li className="topListItem">
             <Link className="link" to="/clientform">
-              ADD REQUEST
+              REQUEST A WORKER
             </Link>
           </li>
           <li className="topListItem">
             <Link className="link" to="/complainform">
-              COMPLAINT
+              COMPLAINTS
             </Link>
           </li>
           <li className="topListItem">
             <Link className="link" to="/aboutus">
-              ABOUT
+              ABOUT US
             </Link>
           </li>
          

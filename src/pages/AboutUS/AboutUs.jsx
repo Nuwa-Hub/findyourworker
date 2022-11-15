@@ -1,19 +1,20 @@
 import React from "react";
 import Developers from "../../components/Developers/Developers";
 import TopBar from "../../components/topbar/TopBar";
-import "./aboutus.scss"
-import "./aboutus.css"
+import "./aboutus.scss";
+import "./aboutus.css";
+import logo from "../../assets/logo.png";
 const AboutUs = () => {
   return (
-    <>
-     <TopBar/>
+    <div className="aboutus-mainn">
+      <TopBar />
 
       <div id="about-main">
-        <div className="jumbotron">
-          <div className="jumbotron-inner">
+        {/* <div className="jumbotron">
+           <div className="jumbotron-inner">
             <div className="top-box">
               <div className="content-box">
-                <h1>About APIMATIC</h1>
+                <h1>About FindYourWorker</h1>
                 <p>
                   APIMatic is a developer experience platform for web APIs.{" "}
                   <br /> Our mission is to make developers productive through
@@ -21,8 +22,8 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-          </div>
-          <div className="img-layer-container">
+          </div> 
+           <div className="img-layer-container">
             <div className="team-image" id="team-image">
               <img src="https://apimatic.io/img/theme/aboutUs/images-1.png" />
             </div>
@@ -35,30 +36,27 @@ const AboutUs = () => {
                 <img src="https://apimatic.io/img/theme/aboutUs/Circles-2-1.svg" />
               </div>
             </div>
-          </div>
-        </div>
+          </div> 
+        </div> */}
+
         <div className="story-container">
           <div className="need-for-dx-container">
-            <h3 className="text-center">Need for DX</h3>
+            <h3 className="text-center">Why findyourworker.lk ?</h3>
             <p>
-              Application Programming Interfaces (APIs) have taken the world by
-              storm and are now the de facto standard of software communication.
-              Almost every software product nowadays consumes APIs. The business
-              model of numerous companies around the world relies upon the
-              consumption of their APIs. API providers, therefore, strive to
-              increase API adoption rates by spending millions of dollars every
-              year to improve developer experience. This is usually done by
-              providing Software Development Kits (SDKs) and API documentation
-              to developer consuming their API(s). Developing SDKs and writing
-              documentation, however, are arduous, monotonous and error-prone
-              tasks. It is a slow process and costs a lot of time and money.
+              We identified your struggle of finding handymen for your
+              unexpected needs in an urban area. From spending your weekends on
+              repairing leaky pipes and wasting your time to fix the washing
+              machine can surely be spent on something more valuable. This is
+              where we enter into your life. Through our Colombo based online
+              platform we provide professional workers to your doorstep to
+              enhance your living condition. Our services include plumbing,
+              painting, gardening, cleaning, repairing, maintenance and other
+              services.
             </p>
-            <div className="img-container">
-           
-            </div>
+            <div className="img-container"></div>
           </div>
           <div className="container-divider"></div>
-          <div className="our-tech-container">
+          {/* <div className="our-tech-container">
             <h3 className="text-center">Our Technology</h3>
             <p>
               Our code generation engine enables API providers to generate SDKs
@@ -77,9 +75,9 @@ const AboutUs = () => {
             <div className="img-container">
              
             </div>
-          </div>
+          </div> */}
           <div className="container-divider"></div>
-          <div className="origin-story-container">
+          {/* <div className="origin-story-container">
             <h3 className="text-center">Origin Story</h3>
             <p>
               While doing research work for their PhDs from the University of
@@ -105,18 +103,22 @@ const AboutUs = () => {
               new academic research to market) and the concept was transformed
               into a product i.e. APIMatic.
             </p>
-          </div>
+          </div> */}
           <div className="container-divider"></div>
           <div className="today-container">
-            <h3 className="text-center">Flash Forward Today</h3>
+            <h3 className="text-center">What's more?</h3>
             <p>
-              APIMatic has come a long way since its inception 3 years ago.
-              Having started with only generating SDKs, APIMatic now provides
-              solutions in other areas of developer experience as well.
-              Presently, APIMatic is used by numerous organizations around the
-              world to:
+              With the goal of contributing to the society by reducing
+              unemployment we act as an intermediary while catering to your
+              needs with the best fit. We ensure your safety by obtaining NIC
+              and police reports from our workers since your safety is our
+              priority. Our skilled workers will guarantee a quality service
+              enhancing customer satisfaction to the fullest. Furthermore, we
+              have added multiple payment options and Free online estimate
+              features for your convenience.
             </p>
-            <ul>
+
+            {/* <ul>
               <li>Create and store definitions of their APIs</li>
               <li>Generate SDKs for their APIs for 10 platforms</li>
               <li>Keep these SDKs in sync with API updates</li>
@@ -126,13 +128,70 @@ const AboutUs = () => {
               </li>
               <li>Generate beautiful documentation for their APIs and SDKs</li>
               <li>Generate complete Developer Experience API Portals</li>
-            </ul>
+            </ul> */}
           </div>
-          <div className="container-divider"></div>
+
+          <div className="origin-story-container">
+            {/* <h3 className="text-center">Origin Story</h3> */}
+            <p>
+              With findyourworker.lk your weekends will no longer be wasted.
+            </p>
+          </div>
         </div>
       </div>
-     <Developers/>
-    </>
+      <footer>
+        <div className="today-footerr">
+          <div className="footer-left">
+            <div>
+              <img src={logo} className="footer-logo" />
+            </div>
+            <div className="footer-icons">
+              <div>
+                {" "}
+                <a href="https://www.facebook.com/findyourworker/">
+                  <i className="footer-icon fab fa-facebook-square"></i>
+                </a>
+                facebook
+              </div>
+              <div>
+                <a href="https://www.instagram.com/invites/contact/?i=113zamdgn5tia&utm_content=l77c5rv">
+                  <i className="footer-icon fab fa-instagram-square"></i>
+                </a>
+                instagram{" "}
+              </div>
+              <div>
+                <a href="findyourworker.lk@gmail.com">
+                  <i class="footer-icon fa-solid fa-envelope"></i>
+                </a>{" "}
+                findyourworker.lk@gmail.com
+              </div>
+              <div>
+                <a>
+                  {" "}
+                  <i class="footer-icon fa-solid fa-phone"></i>
+                </a>
+                +94 77 253 3777
+              </div>
+            </div>
+          </div>
+          <div className="footer-right">
+            <div>
+              {" "}
+              Copyright <i class="fa-solid fa-copyright"></i> Quickhelp
+            </div>
+            <br />
+            <div>
+              <p>developed and designed by </p>
+              <ul className="footer-list">
+                <li>Nuwan Perera</li>
+                <li>Thushalya</li>
+                <li>Kalindu Gandara</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
   );
 };
 
