@@ -41,7 +41,8 @@ const AboutUs = () => {
 
         <div className="story-container">
           <div className="need-for-dx-container">
-            <h3 className="text-center">Why findyourworker.lk ?</h3>
+            <h3 className="text-center">Why findyourworker.lk ?
+            </h3>
             <p>
               We identified your struggle of finding handymen for your
               unexpected needs in an urban area. From spending your weekends on
@@ -133,9 +134,9 @@ const AboutUs = () => {
 
           <div className="origin-story-container">
             {/* <h3 className="text-center">Origin Story</h3> */}
-            <p>
+            <h4>
               With findyourworker.lk your weekends will no longer be wasted.
-            </p>
+            </h4>
           </div>
         </div>
       </div>

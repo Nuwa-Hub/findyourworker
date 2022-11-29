@@ -278,7 +278,10 @@ $about-section-heading-blue: #074e8c;
             @media (max-width: 815px) {
                 width: 90%;
             }
-
+            .text-center{
+                font-family: "Lora", serif;
+                color: rgb(77, 1, 77);
+            }
             .img-container {
                 width: 100%;
                 display: flex;
@@ -297,7 +300,7 @@ $about-section-heading-blue: #074e8c;
                 font-size: 15px;
                 margin-top: 20px;
                 color: $textDarkColor;
-              
+                text-align: justify;
                 @media (max-width:640px) {
                     font-size: 13px;
                 }
